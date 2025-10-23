@@ -1,0 +1,14 @@
+.head {
+    border-bottom: 1px solid var(--color-purple-800);
+    box-shadow: 0 0 26px 2px var(--color-purple-800);
+    background-color: var(--color-background);
+    width: 100%;
+}
+
+.head .drop span {
+    border: 2px solid var(--color-purple-800);
+}
+
+.head svg {
+    color: var(--color-purple-800);
+}
