@@ -180,7 +180,7 @@ export default function AppSidebar({ children }: { children: React.ReactNode }) 
                 />
                 <main className={cn(
                     "container flex-1 overflow-auto w-full",
-                    "p-4 pt-20 lg:pt-10 lg:pr-10",
+                    "p-4 pt-20 lg:pt-10 lg:pr-18",
                 )}>
                     {children}
                 </main>
