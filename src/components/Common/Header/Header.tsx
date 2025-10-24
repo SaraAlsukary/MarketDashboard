@@ -22,7 +22,7 @@ const Header = ({ onMobileMenuToggle, isMobile }: HeaderProps) => {
   return (
     <motion.header
       initial={{ y: -100, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
+      animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: 'easeInOut' }}
       className={'p-4 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-30 ' + head}>
       <div className='flex justify-between items-center'>

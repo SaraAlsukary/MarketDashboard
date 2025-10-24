@@ -27,6 +27,7 @@ const Cards = (props: { icon: ElementType, title: string, text: string, avg: str
                 scale: 1.05,
                 transition: { duration: 0.3 }
             }}
+            whileInView={'visible'}
             whileTap={{ scale: 0.95 }}
             className={card}>
 
