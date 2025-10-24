@@ -29,12 +29,12 @@ const AddPanel = () => {
     return (
         <motion.div
             variants={containerVariants}
-            className='flex justify-between items-center gap-2'>
+            className='flex md:flex-row xl:flex-row lg:flex-row sm:flex-col max-sm:flex-col justify-between items-center gap-2'>
             <motion.div
                 variants={addVariants}
                 initial="hidden"
                 whileInView="visible"
-                className="box flex bg-purple-700 p-2 py-4 w-300 cursor-pointer items-center justify-start rounded-md">
+                className="box flex bg-purple-700 p-2 py-4 lg:w-300 sm:w-full max-sm:w-full cursor-pointer items-center justify-start rounded-md">
                 <div className="icon rounded-md bg-gray-400 mx-2 p-1">
                     <UserPlus color='white' size={20} />
                 </div>
@@ -46,7 +46,7 @@ const AddPanel = () => {
                 variants={addVariants}
                 initial="hidden"
                 whileInView="visible"
-                className="box flex border-2 border-blue-600 p-2 py-4  w-300 cursor-pointer items-center justify-start rounded-md">
+                className="box flex border-2 border-blue-600 p-2 py-4  lg:w-300 sm:w-full max-sm:w-full cursor-pointer items-center justify-start rounded-md">
                 <div className="icon rounded-md bg-gray-200 mx-2 p-1">
                     <UserPlus color='blue' size={20} />
                 </div>
@@ -57,7 +57,8 @@ const AddPanel = () => {
             <motion.div
                 variants={addVariants}
                 initial="hidden"
-                whileInView="visible" className="box flex border-2 border-green-700 p-2 py-4 w-300  cursor-pointer items-center justify-start rounded-md">
+                whileInView="visible" className="box flex border-2 border-green-700 p-2 py-4 
+                lg:w-300 sm:w-full max-sm:w-full cursor-pointer items-center justify-start rounded-md">
                 <div className="icon rounded-md bg-gray-200 mx-2 p-1">
                     <PlusCircle color='green' size={20} />
                 </div>

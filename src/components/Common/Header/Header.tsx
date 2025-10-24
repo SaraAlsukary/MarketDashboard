@@ -41,11 +41,13 @@ const Header = ({ onMobileMenuToggle, isMobile }: HeaderProps) => {
 
         <nav>
           <ul className='flex items-center gap-3'>
-            <li>
+            <li className='sm:hidden max-sm:hidden lg:block xl:block md:block'>
               <FilterDrop />
             </li>
-            <li><ModeToggle /></li>
             <li>
+              <ModeToggle />
+            </li>
+            <li className='sm:hidden max-sm:hidden lg:block xl:block md:block'>
               <button className="p-2 rounded-lg hover:bg-accent transition-colors">
                 <BellDot size={20} />
               </button>
