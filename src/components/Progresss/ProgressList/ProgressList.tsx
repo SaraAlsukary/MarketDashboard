@@ -4,7 +4,7 @@
 import { ActivitySquare, LucideAlignVerticalJustifyStart, LucideShoppingBag, UsersIcon } from 'lucide-react'
 import React from 'react'
 import { ProgressDemo } from '../Progress/Progress'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 
 const ProgressList = () => {
     const progressData = [
@@ -46,7 +46,7 @@ const ProgressList = () => {
             icon: LucideAlignVerticalJustifyStart
         }
     ]
-    const progressVariantsEven: {} = {
+    const progressVariantsEven: Variants = {
         hidden: {
             x: 100,
             opacity: 0
@@ -60,7 +60,7 @@ const ProgressList = () => {
             }
         }
     }
-    const progressVariantsOdd: {} = {
+    const progressVariantsOdd: Variants = {
         hidden: {
             x: -100,
             opacity: 0
@@ -74,7 +74,7 @@ const ProgressList = () => {
             }
         }
     }
-    const titleVariant: {} = {
+    const titleVariant: Variants = {
         hidden: {
             x: 100,
             opacity: 0

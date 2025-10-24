@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react"
-import { Home, ChevronLeft, ShoppingBag, Users, Folders, Menu, X } from "lucide-react"
+import { Home, ChevronLeft, ShoppingBag, Users, Folders, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import Header from "@/components/Common/Header/Header"
 import { motion } from 'framer-motion'
@@ -65,28 +65,7 @@ export default function AppSidebar({ children }: { children: React.ReactNode }) 
             setMobileOpen(false)
         }
     }
-    const headerVariants = {
-        hidden: {
-            y: -100,
-            opacity: 0
-        },
-        visible: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration: 0.6,
-                ease: "easeOut"
-            }
-        },
-        scrolled: {
-            backgroundColor: "rgba(255, 255, 255, 0.95)",
-            backdropFilter: "blur(10px)",
-            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
-            transition: {
-                duration: 0.3
-            }
-        }
-    }
+
     return (
         <div className="flex min-h-screen bg-background " >
             {/* Mobile Overlay */}

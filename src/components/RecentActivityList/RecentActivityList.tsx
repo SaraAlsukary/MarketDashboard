@@ -2,7 +2,7 @@
 
 import { LucideMapPinCheckInside, Network, ShoppingBasket, Table2, UserPlus2 } from 'lucide-react'
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 
 
 const RecentActivity = () => {
@@ -45,7 +45,7 @@ const RecentActivity = () => {
 
     },
     ]
-    const recentVariants: {} = {
+    const recentVariants: Variants = {
         hidden: {
             y: 100,
             opacity: 0

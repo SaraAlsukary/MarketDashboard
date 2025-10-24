@@ -1,11 +1,11 @@
 'use client'
 import React, { ElementType } from 'react'
 import style from './Cards.module.css'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 const { card, icon, title, avg, text } = style;
 const Cards = (props: { icon: ElementType, title: string, text: string, avg: string, color: string }) => {
 
-    const cardVariants: {} = {
+    const cardVariants: Variants = {
         hidden: {
             x: 100,
             opacity: 0

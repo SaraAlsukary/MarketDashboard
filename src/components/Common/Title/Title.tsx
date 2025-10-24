@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 const Title = () => {
-    const titleVariants: {} = {
+    const titleVariants: Variants = {
         hidden: {
             x: 100,
             opacity: 0

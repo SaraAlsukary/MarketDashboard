@@ -9,7 +9,7 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 
 
 const TableComponent = () => {
@@ -57,7 +57,7 @@ const TableComponent = () => {
         <TableCell >{item.date}</TableCell>
         <TableCell className="text-right">{item.status}</TableCell>
     </TableRow>)
-    const tableVariants: {} = {
+    const tableVariants: Variants = {
         hidden: {
             y: 100,
             opacity: 0

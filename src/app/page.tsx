@@ -6,20 +6,7 @@ import TableComponent from "@/components/Feedbacks/Table/Table";
 import Title from "@/components/Common/Title/Title";
 
 export default function Home() {
-  const cardVariants: {} = {
-    hidden: {
-      x: 100,
-      opacity: 0
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut"
-      }
-    }
-  }
+ 
   return (
     <>
       <Title/>

@@ -1,9 +1,9 @@
 'use client'
 import { PlusCircle, UserPlus } from 'lucide-react'
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 const AddPanel = () => {
-    const containerVariants = {
+    const containerVariants: Variants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -12,7 +12,7 @@ const AddPanel = () => {
             }
         }
     }
-    const addVariants: {} = {
+    const addVariants: Variants = {
         hidden: {
             y: 100,
             opacity: 0
