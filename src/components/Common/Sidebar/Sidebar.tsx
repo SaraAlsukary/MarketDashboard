@@ -179,7 +179,7 @@ export default function AppSidebar({ children }: { children: React.ReactNode }) 
                     isMobile={isMobile}
                 />
                 <main className={cn(
-                    "container flex-1 overflow-auto w-full",
+                    "container flex-1 w-full",
                     "p-4 pt-20 lg:pt-10 lg:pr-18",
                 )}>
                     {children}
